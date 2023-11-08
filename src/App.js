@@ -74,6 +74,7 @@ class App extends Component {
         <div className="calculator">
           <div className="display">{this.state.displayValue}</div>
           <div className="buttons">
+            <button onClick={() => this.handleButtonClick('.')}>.</button>
             <button onClick={() => this.handleClear()}>C</button>
             <button onClick={() => this.handleOperator('/')}>/</button>
             <button onClick={() => this.handleOperator('*')}>*</button>
@@ -90,7 +91,6 @@ class App extends Component {
             <button onClick={() => this.handleButtonClick('3')}>3</button>
             <button onClick={() => this.handleCalculate()}>=</button>
             <button onClick={() => this.handleButtonClick('0')}>0</button>
-            <button onClick={() => this.handleButtonClick('.')}>.</button>
           </div>
         </div>
       </div>
